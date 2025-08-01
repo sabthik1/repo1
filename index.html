@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricketLive - Live Cricket Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cricket"></i>
+                <span>CricketLive</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#live" class="nav-link">Live Matches</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#news" class="nav-link">News</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>Watch Live Cricket Matches</h1>
+                <p>Stream your favorite cricket matches live in HD quality. Never miss a moment of the action!</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Watch Live Now</button>
+                    <button class="btn-secondary">View Schedule</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="cricket-animation">
+                    <div class="ball"></div>
+                    <div class="stumps"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-matches" class="live-matches">
+            <div class="container">
+                <h2>Live Matches</h2>
+                <div class="matches-grid">
+                    <div class="match-card live">
+                        <div class="match-header">
+                            <span class="live-indicator">LIVE</span>
+                            <span class="match-type">T20</span>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/1e40af/ffffff?text=IND" alt="India">
+                                <span>India</span>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/059669/ffffff?text=AUS" alt="Australia">
+                                <span>Australia</span>
+                            </div>
+                        </div>
+                        <div class="match-score">
+                            <div class="score">IND: 185/4 (18.2)</div>
+                            <div class="score">AUS: 142/6 (15.1)</div>
+                        </div>
+                        <div class="match-status">
+                            <span class="status">India needs 23 runs in 11 balls</span>
+                        </div>
+                        <button class="btn-watch">Watch Live</button>
+                    </div>
+
+                    <div class="match-card live">
+                        <div class="match-header">
+                            <span class="live-indicator">LIVE</span>
+                            <span class="match-type">ODI</span>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/dc2626/ffffff?text=ENG" alt="England">
+                                <span>England</span>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/7c3aed/ffffff?text=SA" alt="South Africa">
+                                <span>South Africa</span>
+                            </div>
+                        </div>
+                        <div class="match-score">
+                            <div class="score">ENG: 245/8 (45.2)</div>
+                            <div class="score">SA: 189/5 (32.1)</div>
+                        </div>
+                        <div class="match-status">
+                            <span class="status">South Africa needs 57 runs in 17.5 overs</span>
+                        </div>
+                        <button class="btn-watch">Watch Live</button>
+                    </div>
+
+                    <div class="match-card upcoming">
+                        <div class="match-header">
+                            <span class="upcoming-indicator">UPCOMING</span>
+                            <span class="match-type">Test</span>
+                        </div>
+                        <div class="match-teams">
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/0891b2/ffffff?text=PAK" alt="Pakistan">
+                                <span>Pakistan</span>
+                            </div>
+                            <div class="vs">vs</div>
+                            <div class="team">
+                                <img src="https://via.placeholder.com/40x40/059669/ffffff?text=NZ" alt="New Zealand">
+                                <span>New Zealand</span>
+                            </div>
+                        </div>
+                        <div class="match-time">
+                            <span>Tomorrow, 10:00 AM IST</span>
+                        </div>
+                        <button class="btn-reminder">Set Reminder</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="streaming-player" class="streaming-section">
+            <div class="container">
+                <div class="player-container">
+                    <div class="video-player">
+                        <div class="player-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Live Stream</p>
+                            <span>India vs Australia - T20 International</span>
+                        </div>
+                        <div class="player-controls">
+                            <div class="control-left">
+                                <button class="control-btn"><i class="fas fa-play"></i></button>
+                                <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+                                <div class="volume-slider">
+                                    <input type="range" min="0" max="100" value="80">
+                                </div>
+                            </div>
+                            <div class="control-center">
+                                <span class="time">18:42 / 20:00</span>
+                            </div>
+                            <div class="control-right">
+                                <button class="control-btn"><i class="fas fa-expand"></i></button>
+                                <button class="control-btn"><i class="fas fa-cog"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <h3>India vs Australia</h3>
+                        <div class="scoreboard">
+                            <div class="inning">
+                                <h4>India Innings</h4>
+                                <div class="score">185/4 (18.2 overs)</div>
+                                <div class="batsmen">
+                                    <span>Kohli: 45* (32)</span>
+                                    <span>Pandya: 28* (15)</span>
+                                </div>
+                            </div>
+                            <div class="inning">
+                                <h4>Australia Innings</h4>
+                                <div class="score">142/6 (15.1 overs)</div>
+                                <div class="batsmen">
+                                    <span>Smith: 38 (25)</span>
+                                    <span>Warner: 25 (18)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="live-stats">
+                            <div class="stat">
+                                <span class="label">Required Rate:</span>
+                                <span class="value">12.5</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Current Rate:</span>
+                                <span class="value">9.8</span>
+                            </div>
+                            <div class="stat">
+                                <span class="label">Overs Left:</span>
+                                <span class="value">1.4</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="schedule-section">
+            <div class="container">
+                <h2>Upcoming Matches</h2>
+                <div class="schedule-tabs">
+                    <button class="tab-btn active">Today</button>
+                    <button class="tab-btn">Tomorrow</button>
+                    <button class="tab-btn">This Week</button>
+                </div>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="match-time">
+                            <span class="date">Today</span>
+                            <span class="time">8:00 PM IST</span>
+                        </div>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span>West Indies</span>
+                                <span class="vs">vs</span>
+                                <span>Bangladesh</span>
+                            </div>
+                            <div class="venue">Kensington Oval, Barbados</div>
+                        </div>
+                        <button class="btn-reminder">Set Reminder</button>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="match-time">
+                            <span class="date">Tomorrow</span>
+                            <span class="time">2:30 PM IST</span>
+                        </div>
+                        <div class="match-details">
+                            <div class="teams">
+                                <span>Sri Lanka</span>
+                                <span class="vs">vs</span>
+                                <span>Afghanistan</span>
+                            </div>
+                            <div class="venue">R. Premadasa Stadium, Colombo</div>
+                        </div>
+                        <button class="btn-reminder">Set Reminder</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CricketLive</h3>
+                    <p>Your ultimate destination for live cricket streaming and match updates.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#live">Live Matches</a></li>
+                        <li><a href="#schedule">Schedule</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for match updates and exclusive content.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CricketLive. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
